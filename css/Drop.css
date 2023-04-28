@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e5e5e5;
+  display: flex;
+  padding-top: 5rem;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.col-header {
+  width: 150px;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  padding: 0.8rem 1rem;
+  color: #fff;
+}
+
+.item {
+  width: 150px;
+  height: 66px;
+  border: 1px solid #eee;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  background: #f7f6f7;
+  padding: 0.8rem 1rem;
+  color: #828282;
+  text-align: center;
+  cursor: grab;
+}
+
+.item:active {
+  cursor: grabbing;
+}
+
+.placeholder {
+  width: 150px;
+  height: 66px;
+}
+
+.start {
+  background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);
+}
+
+.progress {
+  background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
+}
+
+.done {
+  background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.hold {
+  -webkit-box-shadow: -6px 17px 100px 31px rgba(1, 13, 22, 0.76);
+  -moz-box-shadow: -6px 17px 100px 31px rgba(1, 13, 22, 0.76);
+  box-shadow: -6px 17px 100px 31px rgba(1, 13, 22, 0.76);
+  border: 5px solid #eee;
+}
+
+
+.hide {
+  display: none;
+}
+
+.hovered {
+  border-top: 1px solid black;
+}
+
+.svg-container {
+  height: 124px;
+  position: relative;
+  width: 124px;
+} 
+.svg-container h1 {
+    color: #aaa;
+    font-family: "Source Sans Pro";
+    font-size: 1.2rem;
+    left: 50%;
+    letter-spacing: 4px;
+    position: absolute;
+    text-align: center;
+    top: -60px;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+
+.circle {
+  height: 124px;
+  width: 124px;
+  fill: transparent;
+  stroke: #1abc9c;
+  transition: all 200ms ease;
+  }
+  
+  .foreground {
+    fill: transparent;
+    stroke-dasharray: 377;
+    stroke-dashoffset: 377;
+    stroke: #EE3769;
+    transform-origin: 50% 50%;
+    transform: rotate(-270deg);
+    transition: all 800ms ease;
+  }
+  
+  .line {
+    stroke-width: 2;
+    stroke: #1abc9c;
+    transform-origin: 50% 50%;
+    transition: all 500ms ease;
+  }
+  
+  .line2 {
+    transform: rotate(-90deg);
+  }
+  
+  .line:hover {
+    cursor: pointer;
+      stroke: transparent;
+    
+  }
+    .line.foreground {
+      stroke-dashoffset: 0;
+      transform: rotate(-90deg);
+    }
+    
+    .line {
+      stroke: #EE3769;
+    }
+    
+    .line {
+      transform: rotate(180deg);
+    }
+    
+    .line2 {
+      transform: rotate(0);
+    }
+
+    .btnback {
+      background-color: transparent;
+      border: 2px solid #c0c0c0;
+      color: #fff;
+      cursor: pointer;
+      font-family: inherit;
+      padding: 0.5rem 1rem;
+      font-size: 1.5rem;
+    }
